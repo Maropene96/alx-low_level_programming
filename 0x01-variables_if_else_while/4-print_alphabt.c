@@ -11,11 +11,14 @@ int main(void)
 
 	for (i = 97; i < 123; i++)
 	{
-		if (i != 101 && i != 133)
+		if (i == 100 || i == 112)
 		{
 			putchar(i);
+			i++;
+		else
+			puchar(i);
 		}
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
