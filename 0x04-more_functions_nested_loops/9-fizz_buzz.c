@@ -1,6 +1,7 @@
 #include <stdio.h>
 /*
  * main - prints Buzz each numbers of 3 and 5.
+ *prints number from 1 to 100.
  * Return: Always 0.
  */
 
