@@ -1,20 +1,20 @@
 #include "main.h"
 /**
- * _strspn - gets the length of a prefix sustring.
- * @s: string.
- * @accept: accepted bytes.
- * Return: the number of accepted bytes.
+ * _strspn - gets the length of a prefix string
+ * @s: string
+ * @accept: accepted target bytes.
+ * Return: the number of matched bytes.
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j, bool;
+	unsigned int t, k, bool;
 
-	for (i = 0; *(s + i) != '\0'; i++)
+	for (t = 0; *(s + t) != '\0'; t++)
 	{
 		bool = 1;
-		for (j = 0; *(accept + j) != '\0'; j++)
+		for (k = 0; *(accept + k) != '\0'; k++)
 		{
-			if (*(s + i) == *(accept + j))
+			if (*(s + t) == *(accept + k))
 			{
 				bool = 0;
 				break;
@@ -23,5 +23,5 @@ unsigned int _strspn(char *s, char *accept)
 		if (bool == 1)
 			break;
 	}
-	return (i);
+	return (t);
 }
